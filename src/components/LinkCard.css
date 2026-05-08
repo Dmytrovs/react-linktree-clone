@@ -1,0 +1,24 @@
+.link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid var(--color-stroke);
+  border-radius: 12px;
+  width: clamp(328px, 45vw, 653px);
+  background-color: var(--color-main);
+  padding: clamp(14px, 45vw, 19px) clamp(18px, 45vw, 31px);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--font-size-lc);
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+
+.link-card:hover {
+  background-color: var(--color-secondary);
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+}
