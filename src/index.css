@@ -41,5 +41,4 @@ body {
   font-family: 'Lato', sans-serif;
   background-color:  var(--color-background);
   color: var(--color-text);
-  padding-inline: 15px;
 }

@@ -3,4 +3,52 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-inline: 15px;
 }
+
+.content-container {
+    position: relative;
+    z-index: 2;
+}
+
+.decor-blob {
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.decor-blob.left {
+    left: -1.4%;
+    bottom: -12vh;
+    width: 38vw;
+    max-width: 545px;
+    min-width: 300px;
+}
+
+.decor-blob.right {
+    right: -7.3%;
+    top: 13vh;
+    width: 26vw;
+    max-width: 375px;
+    min-width: 235px;
+}
+
+/* @media (max-width: 480px) {
+    .decor-blob.left {
+        width: 41vw;
+        bottom: -2%;
+    }
+
+    .decor-blob.right {
+        width: 35vw;
+        top: 25%;
+    }
+}  */

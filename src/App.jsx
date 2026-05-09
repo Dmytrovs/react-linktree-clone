@@ -2,7 +2,6 @@ import Bio from "./components/Bio";
 import LinkList from "./components/LinksList";
 import "./App.css";
 
-
 const DATA = {
   name: "Dmytro",
   bio: "Frontend Developer | Content Creator",
@@ -29,20 +28,26 @@ const DATA = {
       icon: "/react-linktree-clone/icon/github.svg",
       iconAlt: "GitHab logo",
     },
-    { id: 4,
+    {
+      id: 4,
       title: "Telegram",
       url: "https://t.me/@Dima_li2025",
       icon: "/react-linktree-clone/icon/telegram.svg",
       iconAlt: "YouTube logo",
-     },
+    },
   ],
 };
 
 function App() {
   return (
     <div className="app-wrapper">
-      <Bio name={DATA.name} bio={DATA.bio} avatar={DATA.avatar} />
-      <LinkList links={DATA.links} />
+      <img src='/react-linktree-clone/decor/blob-left.svg' alt="blob-left-decor" className="decor-blob left" />
+      <img src='/react-linktree-clone/decor/blob-right.svg' alt="blob-right-decor" className="decor-blob right"/>
+
+      <div className="content-container">
+        <Bio name={DATA.name} bio={DATA.bio} avatar={DATA.avatar} />
+        <LinkList links={DATA.links} />
+      </div>
     </div>
   );
 }
