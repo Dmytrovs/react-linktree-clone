@@ -6,7 +6,7 @@
   border-radius: 12px;
   width: clamp(328px, 45vw, 653px);
   background-color: var(--color-main);
-  padding: clamp(14px, 45vw, 19px) clamp(18px, 45vw, 31px);
+  padding: clamp(14px, 3.5vw, 19px) clamp(18px, 4.6vw, 31px);
   text-align: center;
   text-decoration: none;
   font-size: var(--font-size-lc);
